@@ -1,9 +1,13 @@
-/* cal/static/cal/css/styles.css */
-
+body{
+  margin-top: 5px;
+  background-color: white;
+}
 .calendar {
-  width: 98%;
+  width: 95%;
   margin: auto;
-  font-size: 13px;
+  font-size: 18px;
+  background-color: burlywood;
+  
 }
 
 .calendar tr,
@@ -14,7 +18,7 @@
 .calendar th {
   padding: 10px;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .calendar td {
@@ -24,11 +28,11 @@
 }
 
 .month {
-  font-size: 25px;
+  font-size: 35px;
 }
 
 .date {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 ul {
@@ -37,26 +41,31 @@ ul {
 }
 
 a {
-  color: #17a2b8;
+  color: green;
+  text-decoration: none;
 }
 
 .left {
   float: left;
+  margin-left: 2%;
+  color: white;
 }
 
 .right {
   float: right;
+  margin-right: 2%;
+  color: white;
 }
 
 .btn {
   outline: none;
-  color: black;
-  background-color: transparent;
-  box-shadow: 0 0 0 0;
+  color: white;
+  background-color: white(51, 168, 214);
+  box-shadow: 0 0 0 0; 
 }
 
 .clearfix {
-  margin: 15px;
+  margin: 10px;
 }
 
 .form {
@@ -72,4 +81,8 @@ a {
   background: none;
   padding: 5px;
   width: 100%;
+}
+
+.new{
+  background-color: rgb(16, 227, 235);
 }

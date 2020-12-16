@@ -1,10 +1,10 @@
-from django.urls import path
-from .import views
+from django.conf.urls import url
+from . import views
 
-app_name = "cal"
+app_name = 'cal'
 urlpatterns = [
-    path('', views.index, name='home'),
-    path('calendar/', views.calendarview.as_view(), name='calendar'),
-    path('newevent/', views.event, name='newevent'),
-    path('editevent/', views.event, name='editevent'),  
+    url(r'^index/$', views.index, name='index'),
+    url(r'^calendar/$', views.calendarview.as_view(), name='calendar'),
+    url(r'^event/new/$', views.event, name='event_new'),
+	url(r'^event/edit/(?P<event_id>\d+)/$', views.event, name='event_edit'),
 ]
